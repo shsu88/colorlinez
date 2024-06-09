@@ -10,549 +10,469 @@
         android:id="@+id/b00"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball" />
+         />
     <Button
         android:id="@+id/b01"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b00"/>
     <Button
         android:id="@+id/b02"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b01"/>
     <Button
         android:id="@+id/b03"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b02"/>
     <Button
         android:id="@+id/b04"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b03"/>
     <Button
         android:id="@+id/b05"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b04"/>
     <Button
         android:id="@+id/b06"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b05"/>
     <Button
         android:id="@+id/b07"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b06"/>
     <Button
         android:id="@+id/b08"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintLeft_toRightOf="@id/b07"/>
     <Button
         android:id="@+id/b10"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"/>
     <Button
         android:id="@+id/b11"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b10"/>
     <Button
         android:id="@+id/b12"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b11"/>
     <Button
         android:id="@+id/b13"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b12"/>
     <Button
         android:id="@+id/b14"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b13"/>
     <Button
         android:id="@+id/b15"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b14"/>
     <Button
         android:id="@+id/b16"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b15"/>
     <Button
         android:id="@+id/b17"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b16"/>
     <Button
         android:id="@+id/b18"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b00"
         app:layout_constraintLeft_toRightOf="@id/b17"/>
     <Button
         android:id="@+id/b20"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"/>
     <Button
         android:id="@+id/b21"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b20"/>
     <Button
         android:id="@+id/b22"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b21"/>
     <Button
         android:id="@+id/b23"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b22"/>
     <Button
         android:id="@+id/b24"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b23"/>
     <Button
         android:id="@+id/b25"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b24"/>
     <Button
         android:id="@+id/b26"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b25"/>
     <Button
         android:id="@+id/b27"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b26"/>
     <Button
         android:id="@+id/b28"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b10"
         app:layout_constraintLeft_toRightOf="@id/b27"/>
     <Button
         android:id="@+id/b30"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"/>
     <Button
         android:id="@+id/b31"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b30"/>
     <Button
         android:id="@+id/b32"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b31"/>
     <Button
         android:id="@+id/b33"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b32"/>
     <Button
         android:id="@+id/b34"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b33"/>
     <Button
         android:id="@+id/b35"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b34"/>
     <Button
         android:id="@+id/b36"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b35"/>
     <Button
         android:id="@+id/b37"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b36"/>
     <Button
         android:id="@+id/b38"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b20"
         app:layout_constraintLeft_toRightOf="@id/b37"/>
     <Button
         android:id="@+id/b40"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"/>
     <Button
         android:id="@+id/b41"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b40"/>
     <Button
         android:id="@+id/b42"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b41"/>
     <Button
         android:id="@+id/b43"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b42"/>
     <Button
         android:id="@+id/b44"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b43"/>
     <Button
         android:id="@+id/b45"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b44"/>
     <Button
         android:id="@+id/b46"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b45"/>
     <Button
         android:id="@+id/b47"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b46"/>
     <Button
         android:id="@+id/b48"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b30"
         app:layout_constraintLeft_toRightOf="@id/b47"/>
     <Button
         android:id="@+id/b50"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"/>
     <Button
         android:id="@+id/b51"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b50"/>
     <Button
         android:id="@+id/b52"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b51"/>
     <Button
         android:id="@+id/b53"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b52"/>
     <Button
         android:id="@+id/b54"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b53"/>
     <Button
         android:id="@+id/b55"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b54"/>
     <Button
         android:id="@+id/b56"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b55"/>
     <Button
         android:id="@+id/b57"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b56"/>
     <Button
         android:id="@+id/b58"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b40"
         app:layout_constraintLeft_toRightOf="@id/b57"/>
     <Button
         android:id="@+id/b60"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"/>
     <Button
         android:id="@+id/b61"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b60"/>
     <Button
         android:id="@+id/b62"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b61"/>
     <Button
         android:id="@+id/b63"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b62"/>
     <Button
         android:id="@+id/b64"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b63"/>
     <Button
         android:id="@+id/b65"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b64"/>
     <Button
         android:id="@+id/b66"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b65"/>
     <Button
         android:id="@+id/b67"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b66"/>
     <Button
         android:id="@+id/b68"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b50"
         app:layout_constraintLeft_toRightOf="@id/b67"/>
     <Button
         android:id="@+id/b70"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"/>
     <Button
         android:id="@+id/b71"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b70"/>
     <Button
         android:id="@+id/b72"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b71"/>
     <Button
         android:id="@+id/b73"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b72"/>
     <Button
         android:id="@+id/b74"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b73"/>
     <Button
         android:id="@+id/b75"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b74"/>
     <Button
         android:id="@+id/b76"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b75"/>
     <Button
         android:id="@+id/b77"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b76"/>
     <Button
         android:id="@+id/b78"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b60"
         app:layout_constraintLeft_toRightOf="@id/b77"/>
     <Button
         android:id="@+id/b80"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"/>
     <Button
         android:id="@+id/b81"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b80"/>
     <Button
         android:id="@+id/b82"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b81"/>
     <Button
         android:id="@+id/b83"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b82"/>
     <Button
         android:id="@+id/b84"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b83"/>
     <Button
         android:id="@+id/b85"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b84"/>
     <Button
         android:id="@+id/b86"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b85"/>
     <Button
         android:id="@+id/b87"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b86"/>
     <Button
         android:id="@+id/b88"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/ball"
         app:layout_constraintTop_toBottomOf="@id/b70"
         app:layout_constraintLeft_toRightOf="@id/b87"/>
 

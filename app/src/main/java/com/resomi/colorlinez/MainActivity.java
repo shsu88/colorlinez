@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Button> buttons;
+    private ArrayList<BallButton> buttons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             for (int j = 0; j < 9; j++){
                 String id = String.format("%d%d", i, j);
                 int resId = this.getResources().getIdentifier("b"+id, "id", this.getPackageName());
-                Button b = findViewById(resId);
+                BallButton b = new BallButton(findViewById(resId));
                 b.setText(id);
                 buttons.add(b);
             }
