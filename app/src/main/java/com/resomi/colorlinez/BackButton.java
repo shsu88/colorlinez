@@ -1,19 +1,19 @@
 package com.resomi.colorlinez;
 
-import android.system.StructMsghdr;
-import android.widget.Button;
 import android.graphics.Color;
-public class BallButton {
+import android.widget.Button;
+
+public class BackButton {
+
     private Button b;
 
-    public BallButton(Button raw) {
+    public BackButton(Button raw) {
         b = raw;
         b.setOnClickListener(v -> {
             b.LightUp(b, "#ffffff");
         });
     }
 
-    public void setText(String s) {
-        b.setText(s);
-    }
+
+
 }
