@@ -3,7 +3,6 @@ package com.resomi.colorlinez;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
                 String id = String.format("%d%d", i, j);
                 int resId = this.getResources().getIdentifier("b"+id, "id", this.getPackageName());
                 BallButton b = new BallButton(findViewById(resId));
-                b.setText(id);
                 buttons.add(b);
             }
         }

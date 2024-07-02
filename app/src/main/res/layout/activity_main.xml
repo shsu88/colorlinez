@@ -10,7 +10,7 @@
         android:id="@+id/b00"
         android:layout_width="64dp"
         android:layout_height="64dp"
-         />
+        />
     <Button
         android:id="@+id/b01"
         android:layout_width="64dp"
