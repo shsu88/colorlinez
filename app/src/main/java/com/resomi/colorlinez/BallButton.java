@@ -1,7 +1,9 @@
 package com.resomi.colorlinez;
 
-import android.widget.Button;
-import android.graphics.Color;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
+import android.widget.ImageView;
 
 /**
  * BallButton implements 4 different states:
@@ -17,29 +19,27 @@ public class BallButton {
         ColorBallSelected,
     }
 
-    private final Button b;
+    private final ImageView b;
     private State s;
 
-    public BallButton(Button raw) {
+    public BallButton(ImageView raw) {
         b = raw;
         s = State.EmptyUnselected;
         b.setOnClickListener(v -> {
             switch (s) {
                 case EmptyUnselected:
-                    b.setBackgroundColor(Color.parseColor("#FF00FF"));
                     s = State.EmptySelected;
                     break;
                 case ColorBallUnselected:
-                    b.setBackgroundColor(Color.parseColor("#FF00FF"));
                     s = State.ColorBallSelected;
                     break;
                 case ColorBallSelected:
-                    b.setBackgroundColor(Color.parseColor("#FFFFFF"));
                     s = State.ColorBallUnselected;
                     break;
                 default:  // EmptySelected
                     break;
             }
+            redraw();
         });
     }
 
@@ -59,7 +59,21 @@ public class BallButton {
         // TODO: remove the drawn ball
     }
 
-    public void setText(String s) {
-        b.setText(s);
+    public void redraw() {
+        Resources r = b.getResources();
+        Drawable f = r.getDrawable(R.drawable.empty_rect, null);
+        Drawable[] balls = {r.getDrawable(R.drawable.red_ball, null),
+                r.getDrawable(R.drawable.orange_ball, null),
+                r.getDrawable(R.drawable.yellow_ball, null),
+                r.getDrawable(R.drawable.green_ball, null),
+                r.getDrawable(R.drawable.blue_ball, null),
+                r.getDrawable(R.drawable.purple_ball, null),
+                r.getDrawable(R.drawable.pink_ball, null),
+                r.getDrawable(R.drawable.brown_ball, null)};
+        Drawable ball = balls[(int)Math.floor(Math.random() * balls.length)];
+        Drawable[] layers = {f, ball};
+        LayerDrawable ld = new LayerDrawable(layers);
+        b.setImageDrawable(ld);
+        b.invalidate();
     }
 }
