@@ -21,10 +21,14 @@ public class BallButton {
 
     private final ImageView b;
     private State s;
+    private Drawable ball;
+    private int index;
 
     public BallButton(ImageView raw) {
         b = raw;
         s = State.EmptyUnselected;
+        ball = null;
+        index = -1;
         b.setOnClickListener(v -> {
             switch (s) {
                 case EmptyUnselected:
@@ -39,41 +43,40 @@ public class BallButton {
                 default:  // EmptySelected
                     break;
             }
-            redraw();
         });
     }
 
-    public void setBall(String color) {
-        if (s != State.EmptySelected || s != State.EmptyUnselected) {
+    public void setBall(Drawable newBall) {
+        if (s != State.EmptySelected && s != State.EmptyUnselected) {
             throw new IllegalStateException();
         }
         s = State.ColorBallUnselected;
-        // TODO: draw a circle filled with the color
-    }
-
-    public void removeBall() {
-        if (s != State.ColorBallSelected || s != State.ColorBallUnselected) {
-            throw new IllegalStateException();
-        }
-        s = State.EmptyUnselected;
-        // TODO: remove the drawn ball
-    }
-
-    public void redraw() {
+        ball = newBall;
         Resources r = b.getResources();
         Drawable f = r.getDrawable(R.drawable.empty_rect, null);
-        Drawable[] balls = {r.getDrawable(R.drawable.red_ball, null),
-                r.getDrawable(R.drawable.orange_ball, null),
-                r.getDrawable(R.drawable.yellow_ball, null),
-                r.getDrawable(R.drawable.green_ball, null),
-                r.getDrawable(R.drawable.blue_ball, null),
-                r.getDrawable(R.drawable.purple_ball, null),
-                r.getDrawable(R.drawable.pink_ball, null),
-                r.getDrawable(R.drawable.brown_ball, null)};
-        Drawable ball = balls[(int)Math.floor(Math.random() * balls.length)];
         Drawable[] layers = {f, ball};
         LayerDrawable ld = new LayerDrawable(layers);
         b.setImageDrawable(ld);
         b.invalidate();
+    }
+
+    public void removeBall() {
+        if (s != State.ColorBallSelected && s != State.ColorBallUnselected) {
+            throw new IllegalStateException();
+        }
+        s = State.EmptyUnselected;
+        ball = null;
+        Resources r = b.getResources();
+        Drawable f = r.getDrawable(R.drawable.empty_rect, null);
+        b.setImageDrawable(f);
+        b.invalidate();
+    }
+
+    public boolean isEmpty() {
+        return ball == null;
+    }
+
+    public void setIndex(int i) {
+        index = i;
     }
 }
