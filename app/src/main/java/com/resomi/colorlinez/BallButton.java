@@ -71,12 +71,4 @@ public class BallButton {
         b.setImageDrawable(f);
         b.invalidate();
     }
-
-    public boolean isEmpty() {
-        return ball == null;
-    }
-
-    public void setIndex(int i) {
-        index = i;
-    }
 }

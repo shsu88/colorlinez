@@ -11,55 +11,20 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<BallButton> buttons;
+    private Board board;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        board = new Board();
 
-        buttons = new ArrayList<>();
         for (int i = 0; i < 9; i++){
             for (int j = 0; j < 9; j++){
                 String id = String.format("%d%d", i, j);
                 int resId = this.getResources().getIdentifier("b"+id, "id", this.getPackageName());
-                BallButton b = new BallButton(findViewById(resId));
-                buttons.add(b);
-                b.setIndex(buttons.size() - 1);
+                board.addButton(new BallButton(findViewById(resId)));
             }
-        }
-
-        generateBalls();
-        while (!gameOver()) {
-            /*
-            while (true) {
-                // wait for player to select a ball
-                // wait for player to select an empty space
-                // if can move, move the ball and exit loop
-                break;
-            }
-            // generate 3 balls randomly
-            if (!generateBalls()) {
-                break;
-            }
-
-             */
-        }
-
-        // TODO: Game Over
-    }
-
-    protected boolean generateBalls() {
-        ArrayList<BallButton> emptyButtons = new ArrayList<BallButton>();
-        for (BallButton b : buttons) {
-            if (b.isEmpty()) {
-                emptyButtons.add(b);
-            }
-        }
-
-        if (emptyButtons.size() < 3) {
-            // game over
-            return false;
         }
 
         Resources r = this.getResources();
@@ -71,19 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 r.getDrawable(R.drawable.purple_ball, null),
                 r.getDrawable(R.drawable.pink_ball, null),
                 r.getDrawable(R.drawable.brown_ball, null)};
+        board.setBalls(balls);
 
-        for (int i = 0; i < 3; ++i) {
-            Drawable ball = balls[(int) Math.floor(Math.random() * balls.length)];
-            int index = (int) Math.floor(Math.random() * emptyButtons.size());
-            emptyButtons.get(index).setBall(ball);
-            emptyButtons.remove(index);
+        while (!board.isGameOver()) {
+            board.play();
         }
-
-        return true;
-    }
-
-    protected boolean gameOver() {
-        // no movement available for player
-        return true;
     }
 }
